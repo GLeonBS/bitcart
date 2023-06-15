@@ -1,7 +1,10 @@
+import { HttpClient } from '@angular/common/http';
 import { Product } from '../interfaces/product';
 import { of } from 'rxjs';
 
 export class ProductService {
+
+  constructor(private httpClient: HttpClient){}
   get() {
     return of<Product[]>([
       {

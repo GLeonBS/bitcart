@@ -5,7 +5,6 @@ import { CartService } from './services';
   selector: 'app-root',
   template: `
     <app-toolbar [title]="title" [total]="cartService.total$"></app-toolbar>
-
     <main>
       <router-outlet></router-outlet>
     </main>
